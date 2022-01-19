@@ -3,11 +3,6 @@ using CqrsTemplate.Core.Excepitons;
 using CqrsTemplate.Data.Data;
 using CqrsTemplate.Data.DTO;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CqrsTemplate.Core.Handlers.Queries
 {
