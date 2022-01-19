@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 IConfiguration configuration = new ConfigurationBuilder()
                             .AddJsonFile("appsettings.json")
+                            .AddEnvironmentVariables()
                             .Build();
 
 var builder = WebApplication.CreateBuilder(args);

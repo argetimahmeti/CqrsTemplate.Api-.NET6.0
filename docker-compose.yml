@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  cqrstemplate.api:
+    image: ${DOCKER_REGISTRY-}cqrstemplateapi
+    build:
+      context: .
+      dockerfile: CqrsTemplate.Api/Dockerfile
