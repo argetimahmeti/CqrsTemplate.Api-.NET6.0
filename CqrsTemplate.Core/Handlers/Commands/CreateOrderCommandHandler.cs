@@ -53,7 +53,7 @@ namespace CqrsTemplate.Core.Handlers.Commands
             };
 
             _repository.Order.Add(entity);
-            await _repository.SubmitAsync();
+            await _repository.SaveChangesAsync();
 
             return entity.Id;
         }

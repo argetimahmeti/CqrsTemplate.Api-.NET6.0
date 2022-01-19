@@ -15,7 +15,7 @@ namespace CqrsTemplate.Infrastructure.Data
         }
         public IOrderRepository Order => new OrderRepository(_context);
 
-        public async Task SubmitAsync()
+        public async Task SaveChangesAsync()
         {
             await _context.SaveChangesAsync();
         }
