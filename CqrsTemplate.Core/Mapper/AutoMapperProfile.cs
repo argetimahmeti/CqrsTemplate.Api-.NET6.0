@@ -9,6 +9,7 @@ namespace CqrsTemplate.Core.Mapper
         public AutoMapperProfile()
         {
             CreateMap<Order, OrderDTO>();
+            CreateMap<Item, ItemDTO>();
         }
     }
 }
